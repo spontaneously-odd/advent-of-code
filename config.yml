@@ -22,5 +22,9 @@ steps:
         body: pr-comment.md
         file: some-file.js
         position: '1'
+      - type: createPullRequestComment
+        file: some-file.js
+        position: '2'
+        body: another-comment.md
     description: 'second '
     event: pull_request.opened
