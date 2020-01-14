@@ -4,6 +4,7 @@ description: asdasd
 template:
   repo: advent-of-code-template
   name: advent-of-code
+  description: a christmas adventure!
 before:
   - type: createIssue
     title: Welcome!
@@ -15,3 +16,11 @@ steps:
     link: '{{ repoUrl }}'
     actions:
       - type: closeIssue
+  - title: Second Step
+    actions:
+      - type: createPullRequestComment
+        body: pr-comment.md
+        file: some-file.js
+        position: '1'
+    description: 'second '
+    event: pull_request.opened
